@@ -187,18 +187,38 @@
     main section .search img:nth-child(3){
 
         height: 25px;
-        margin-right: 20px;
+        width: auto;
+        margin-right: 1.5vw;
+        padding-left: 1.3vw;
+
+    }
+
+    main section .search form{
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 35vw;
 
     }
 
     main section .search form input{
 
-        width: 480px;
+        width: 32vw;
         height: 25px;
         border: none;
         outline: none;
         font-size: 16px;
 
+    }
+
+    main section .search form img{
+
+        width: 18px;
+        height: 18px;
+        display: none;
+        
     }
 
     main section .search-buttons{
@@ -218,6 +238,13 @@
         width: 150px;
         height: 35px;
         font-size: 14px;
+        border-radius: 3px;
+
+    }
+
+    main section .search-buttons button:hover{
+
+        border: 1px solid var(--line-color);
 
     }
 
@@ -230,6 +257,57 @@
     main section .switch-lang a{
 
         text-decoration: none;
+
+    }
+
+    main section .switch-lang a:hover{
+
+        text-decoration: underline;
+
+    }
+
+    @media (max-width: 790px){
+
+        main section .search form{
+
+            width: 32vw;
+    
+        }
+
+        main section .search form input{
+
+            width: 30vw;
+        }
+
+    }
+
+    @media (max-width: 700px){
+
+        main section .search form{
+
+            width: 30vw;
+    
+        }
+
+        main section .search form input{
+
+            width: 25vw;
+        }
+
+    }
+
+    @media (max-width: 500px){
+
+        main section .search form{
+
+            width: 25vw;
+    
+        }
+
+        main section .search form input{
+
+            width: 18vw;
+        }
 
     }
 
@@ -284,6 +362,12 @@
 
     }
 
+    footer .footer-block:nth-child(2) .left-footer-block a:hover{
+
+        text-decoration: underline;
+
+    }
+
     footer .footer-block:nth-child(2) .right-footer-block{
 
         font-size: 14px;
@@ -301,6 +385,12 @@
 
         text-decoration: none;
         color: var(--text-lighter-color);
+
+    }
+
+    footer .footer-block:nth-child(2) .right-footer-block a:hover{
+
+        text-decoration: underline;
 
     }
 

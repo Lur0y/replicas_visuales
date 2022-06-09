@@ -16,6 +16,7 @@
                 maximum-scale = 1.0, 
                 minimum-scale = 1.0"
         />
+        <script src = "js/index.js" defer></script>
     </head>
     <body>
         <header>
@@ -47,12 +48,16 @@
                     <img src = "./icons/lens.JPG" alt = "Icono de lupa" />
                     <form action = "#">
                         <input 
+                            id = "search_input_text"
                             type = "text" 
+                            onchange = "change()"
                             onfocus = "document.getElementById('search').setAttribute('title', 'focus');" 
                             onblur = "document.getElementById('search').setAttribute('title', 'not-focus');"
+                            required
                         />
+                        <img src = "./icons/cross.jpg" alt = "Icono de cruz" id = "cross" onclick = "delete_input_data();" />
                     </form>
-                    <img src = "./icons/microphone.JPG" alt = "Icono de microfono" />
+                    <img src = "./icons/microphone.JPG" alt = "Icono de microfono" id = "microphone" />
                 </div>
 
                 <div class = "search-buttons">
