@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "es-MX">
+    <head>
+        <title>Google</title>
+        <link rel = "stylesheet" href = "./css/styles.css" />
+        <link rel = "icon" href = "./icons/google-page-icon.png" />
+        <meta charset = "UTF-8" />
+        <meta name = "description" content = "Esta pagina es un clon de Google" />
+        <meta name = "robots" content = "index, follow" />
+        <meta 
+            name = "viewport"
+            content = "
+                width = device-width, 
+                user-scalable = no, 
+                initial-scale = 1.0, 
+                maximum-scale = 1.0, 
+                minimum-scale = 1.0"
+        />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href = "#">Gmail</a></li>
+                    <li><a href = "#">Imágenes</a></li>
+                    <li>
+                        <a href = "#">
+                            <img src = "./icons/nine-dots.JPG" alt = "Icono de opciones" class = "options-img" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <img src = "./img/user-photo.jpg" alt = "Foto de usuario" class = "user-img"/>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+
+                <figure>
+                    <img src = "./icons/google-logo.png" alt = "Logo de Google" />
+                </figure>
+
+                <div class = "search" id = "search">
+                    <img src = "./icons/lens.JPG" alt = "Icono de lupa" />
+                    <form action = "#">
+                        <input 
+                            type = "text" 
+                            onfocus = "document.getElementById('search').setAttribute('title', 'focus');" 
+                            onblur = "document.getElementById('search').setAttribute('title', 'not-focus');"
+                        />
+                    </form>
+                    <img src = "./icons/microphone.JPG" alt = "Icono de microfono" />
+                </div>
+
+                <div class = "search-buttons">
+                    <button>Buscar con Google</button>
+                    <button>Me siento con suerte</button>
+                </div>
+
+                <div class = "switch-lang">
+                    Ofrecido por Google en: <a href = "#">English</a>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <div class = "footer-block">
+                <p>México</p>
+            </div>
+            <div class = "footer-block">
+                <div class = "left-footer-block">
+                    <p><a href = "#">Sobre Google</a></p>
+                    <p><a href = "#">Publicidad</a></p>
+                    <p><a href = "#">Negocios</a></p>
+                    <p><a href = "#">Cómo funciona la Búsqueda</a></p>
+                </div>
+                <div class = "right-footer-block">
+                    <p><a href = "#">Privacidad</a></p>
+                    <p><a href = "#">Condiciones</a></p>
+                    <p><a href = "#">Preferencias</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

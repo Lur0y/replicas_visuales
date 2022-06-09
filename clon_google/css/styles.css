@@ -1,0 +1,309 @@
+/* #region ESTILOS GLOBALES */
+
+    *{
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    :root{
+
+        --text-color: #42423c;
+        --footer-color: #F2F2F2;
+        --button-color: #F8F9FA;
+        --border-color: #e9eae9;
+        --text-lighter-color: #70757A;
+        --line-color: #dcdcdc;
+
+    }
+
+    body{
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+
+    }
+
+/* #endregion ESTILOS GLOBALES */
+
+/* #region ESTILOS DEL HEADER */
+
+    header{
+
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        justify-content: end;
+        font-size: 13px;
+
+    }
+
+    header nav ul{
+
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 13px;
+
+    }
+
+    header nav ul li{
+
+        margin-right: 15px;
+        
+    }
+
+
+    header nav ul li:nth-child(2){
+
+        margin-right: 25px;
+
+    }
+
+    header ul li:nth-child(3){
+
+        margin-right: 25px;
+        padding: 10px;
+        border-radius: 50%;
+
+    }
+
+    header ul li:nth-child(3):hover{
+
+        background-color: var(--line-color);
+
+    }
+
+    header nav ul li a{
+
+        display: grid;
+        place-items: center;
+        text-decoration: none;
+        color: var(--text-color);
+
+    }
+
+    header nav ul li a:hover{
+
+        text-decoration: underline;
+
+    }
+
+    header nav ul li a .options-img{
+
+        width: 17px;
+
+    }
+
+    header nav ul li a .user-img{
+
+        width: 31px;
+        border-radius: 50%;
+
+    }
+
+/* #endregion ESTILOS DEL HEADER */
+
+/* #region ESTILOS DE MAIN */
+
+    main{
+
+        width: 100vw;
+        height: 76vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+    main section{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    main section figure{
+
+        width: 265px;
+        margin-bottom: 20px;
+
+    }
+    
+    main section figure img{
+
+        width: 100%;
+
+    }
+
+    main section .search{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--border-color);
+        border-radius: 50px;
+        width: 45vw;
+        height: 45px;
+
+    }
+
+    main section .search[title = "focus"]{
+
+        box-shadow: 0px 0px 3px 3px var(--border-color);
+        
+    }
+
+    main section .search[title = "not-focus"]{
+
+        box-shadow: none;
+        
+    }
+
+    main section .search:hover{
+
+        box-shadow: 0px 0px 3px 3px var(--border-color);
+
+    }
+
+    main section .search:active{
+
+        box-shadow: 0px 0px 1px 3px var(--border-color);
+
+    }
+
+    main section .search img:nth-child(1){
+
+        width: 15px;
+        height: 15px;
+        margin-left: 16px;
+
+    }
+
+    main section .search img:nth-child(3){
+
+        height: 25px;
+        margin-right: 20px;
+
+    }
+
+    main section .search form input{
+
+        width: 480px;
+        height: 25px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+
+    }
+
+    main section .search-buttons{
+
+        width: 315px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 20px;
+
+    }
+
+    main section .search-buttons button{
+
+        background-color: var(--button-color);
+        border: none;
+        width: 150px;
+        height: 35px;
+        font-size: 14px;
+
+    }
+
+    main section .switch-lang{
+
+        font-size: 13px;
+
+    }
+
+    main section .switch-lang a{
+
+        text-decoration: none;
+
+    }
+
+/* #endregion ESTILOS DE MAIN */
+
+/* #region ESTILOS DEL FOOTER */
+
+    footer{
+
+        width: 100%;
+
+    }
+
+    footer .footer-block{
+
+        background-color: var(--footer-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
+        font-size: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: var(--text-lighter-color)
+
+    }
+
+    footer .footer-block:nth-child(1){
+
+        font-size: 15px;
+        border-bottom: 1px solid var(--line-color);
+
+    }
+
+    footer .footer-block:nth-child(2) .left-footer-block{
+
+        font-size: 14px;
+        display: flex;
+
+    }
+
+    footer .footer-block:nth-child(2) .left-footer-block p{
+
+        margin-right: 25px;
+
+    }
+
+    footer .footer-block:nth-child(2) .left-footer-block a{
+
+        text-decoration: none;
+        color: var(--text-lighter-color);
+
+    }
+
+    footer .footer-block:nth-child(2) .right-footer-block{
+
+        font-size: 14px;
+        display: flex;
+
+    }
+
+    footer .footer-block:nth-child(2) .right-footer-block p{
+
+        margin-right: 25px;
+
+    }
+
+    footer .footer-block:nth-child(2) .right-footer-block a{
+
+        text-decoration: none;
+        color: var(--text-lighter-color);
+
+    }
+
+
+/* #endregion ESTILOS DEL FOOTER */
+
