@@ -318,6 +318,8 @@
     footer{
 
         width: 100%;
+        position: fixed;
+        bottom: 0;
 
     }
 
@@ -329,8 +331,8 @@
         align-items: center;
         height: 48px;
         font-size: 12px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 2.7vw;
+        padding-right: 2.7vw;
         color: var(--text-lighter-color)
 
     }
@@ -351,7 +353,7 @@
 
     footer .footer-block:nth-child(2) .left-footer-block p{
 
-        margin-right: 25px;
+        margin-right: 1.9vw;
 
     }
 
@@ -377,7 +379,7 @@
 
     footer .footer-block:nth-child(2) .right-footer-block p{
 
-        margin-right: 25px;
+        margin-right: 1.9vw;
 
     }
 
@@ -394,6 +396,98 @@
 
     }
 
+    @media (max-width: 840px){
+
+        footer .footer-block:nth-child(2){
+
+            flex-direction: column;
+            height: 84px;
+            align-items: center;
+            justify-content: space-evenly;
+    
+        }
+
+        footer .footer-block:nth-child(2) .left-footer-block{
+
+            margin-bottom: 10px;
+    
+        }
+
+        footer .footer-block:nth-child(2) .left-footer-block p{
+
+            margin-right: 4vw;
+    
+        }
+
+        footer .footer-block:nth-child(2) .right-footer-block p{
+
+            margin-right: 4vw;
+    
+        }
+
+    }
+
+    @media (max-width: 540px){
+
+        footer .footer-block:nth-child(2) .left-footer-block p:nth-child(1){
+
+            grid-area: sobre_google;
+    
+        }
+
+        footer .footer-block:nth-child(2) .left-footer-block p:nth-child(2){
+
+            grid-area: publicidad;
+    
+        }
+
+        footer .footer-block:nth-child(2) .left-footer-block p:nth-child(3){
+
+            grid-area: negocios;
+    
+        }
+
+        footer .footer-block:nth-child(2) .left-footer-block p:nth-child(4){
+
+            grid-area: como_funciona;
+    
+        }
+
+        footer .footer-block:nth-child(2) .left-footer-block{
+
+            display: grid;
+            grid-template-areas: 'sobre_google publicidad negocios' '. como_funciona .';
+            justify-items: center;
+            align-content: space-evenly;
+            height: 100%;
+
+            margin: 0;
+
+        }
+
+        footer .footer-block:nth-child(2) .left-footer-block p{
+
+            width: fit-content;
+    
+        }
+
+        footer .footer-block:nth-child(2) .left-footer-block p a{
+
+            margin: 0;
+    
+        }
+
+    }
+
+    @media (max-height: 500px){
+
+        footer{
+
+            position: static;
+
+        }
+        
+    }
 
 /* #endregion ESTILOS DEL FOOTER */
 
