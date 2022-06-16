@@ -147,8 +147,9 @@
         align-items: center;
         border: 1px solid var(--border-color);
         border-radius: 50px;
-        width: 45vw;
+        width: 90vw;
         height: 45px;
+        max-width: 580px;
 
     }
 
@@ -178,17 +179,17 @@
 
     main section .search img:nth-child(1){
 
-        width: 15px;
-        height: 15px;
+        width: 14px;
+        height: 14px;
         margin-left: 16px;
 
     }
 
     main section .search img:nth-child(3){
 
-        height: 25px;
+        height: 20px;
         width: auto;
-        margin-right: 1.5vw;
+        margin-right: 3.5%;
         padding-left: 1.3vw;
 
     }
@@ -199,13 +200,17 @@
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        width: 35vw;
+        width: 85vw;
+        max-width: 490px;
+        margin-left: 1vw;
+        margin-right: 1vw;
 
     }
 
     main section .search form input{
 
-        width: 32vw;
+        width: 100%;
+        max-width: 480px;
         height: 25px;
         border: none;
         outline: none;
@@ -263,51 +268,6 @@
     main section .switch-lang a:hover{
 
         text-decoration: underline;
-
-    }
-
-    @media (max-width: 790px){
-
-        main section .search form{
-
-            width: 32vw;
-    
-        }
-
-        main section .search form input{
-
-            width: 30vw;
-        }
-
-    }
-
-    @media (max-width: 700px){
-
-        main section .search form{
-
-            width: 30vw;
-    
-        }
-
-        main section .search form input{
-
-            width: 25vw;
-        }
-
-    }
-
-    @media (max-width: 500px){
-
-        main section .search form{
-
-            width: 25vw;
-    
-        }
-
-        main section .search form input{
-
-            width: 18vw;
-        }
 
     }
 
